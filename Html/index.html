@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/images/GlobeTravia.png" sizes="32x32" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="/Css/styles.css">
+    <link rel="stylesheet" href="/Css/index.css">
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Globe Travia</title>
 </head>
@@ -41,7 +41,7 @@
                         <label for="guests">Guests</label>
                         <input type="text" placeholder="Number of guests">
                     </div>
-                    <button class="button">CHECK AVAILABILITY</button>
+                    <button class="button" id="check" style="margin-left: 120px;">CHECK AVAILABILITY</button>
                 </form>
             </div>
         </div>
@@ -60,7 +60,7 @@
                 <div class="trending_card">
                     <img src="/images/trending1.jpg" alt="trending1">
                     <h1>Mountain Hikings</h1>
-                    <p>Journey to the world’s most breathtaking mountains.</p>
+                    <p>Embark on an adventure to explore the world’s most awe-inspiring mountain landscapes.</p>
                     <div class="trending_details">
                         <div class="price">
                             <p>From</p>
@@ -91,7 +91,7 @@
                 <div class="trending_card">
                     <img src="/images/trending2.jpg" alt="trending2">
                     <h1>Train Travelling</h1>
-                    <p>Enjoy the most wonderful sceneries through train.</p>
+                    <p>Discover breathtaking landscapes and unforgettable moments on a scenic train journey.</p>
                     <div class="trending_details">
                         <div class="price">
                             <p>From</p>
@@ -122,7 +122,7 @@
                 <div class="trending_card">
                     <img src="/images/trending3.jpg" alt="trending3">
                     <h1>Vibrant Beaches</h1>
-                    <p>Experience the vibrancy of sun-kissed beaches</p>
+                    <p>Embrace the radiant charm of sun-kissed beaches for an unforgettable coastal escape</p>
                     <div class="trending_details">
                         <div class="price">
                             <p>From</p>
@@ -153,7 +153,7 @@
                 <div class="trending_card">
                     <img src="/images/trending4.jpg" alt="trending4">
                     <h1>Jungle Safari</h1>
-                    <p>Explore the wild heart of nature on a jungle safari.</p>
+                    <p>Discover nature's untamed beauty and adventure on thrilling jungle safari experience</p>
                     <div class="trending_details">
                         <div class="price">
                             <p>From</p>
@@ -184,7 +184,7 @@
                 <div class="trending_card">
                     <img src="/images/trending5.webp" alt="trending5">
                     <h1>Family Tours</h1>
-                    <p>Experience once in a lifetime moment with your family.</p>
+                    <p>Create Unforgettable Moments with Your Family - A Once in a Lifetime Experience Awaits</p>
                     <div class="trending_details">
                         <div class="price">
                             <p>From</p>
@@ -215,7 +215,7 @@
                 <div class="trending_card">
                     <img src="/images/trending6.jpg" alt="trending6">
                     <h1>Buisness Meets</h1>
-                    <p>Book your buisness meets</p>
+                    <p>Host Your Business Meetings Anywhere, Anytime—Seamlessly Across the Globe</p>
                     <div class="trending_details">
                         <div class="price">
                             <p>From</p>
@@ -248,7 +248,7 @@
 
 
     <div class="section_destination" id="destination">
-        <div class="section_div">
+        <div class="section_div" id="dest">
             <h2 class="section_title">Top Destinations</h2>
             <div class="trending_div">
                 <span><i class="ri-arrow-left-s-line"></i></span>
@@ -317,7 +317,7 @@
                 </div>
             </div>
             <div class="destination_card">
-                <img src="/images/Rio.jpeg" alt="destination7">
+                <img src="/images/Rio.jpeg" alt="destination7" id="d7">
                 <div class="badge">
                     4.6
                 </div>
@@ -357,7 +357,7 @@
                 </div>
             </div>
             <div class="destination_card">
-                <img src="/images/Islamabad.jpg" alt="destination11">
+                <img src="/images/Islamabad1.jpg" alt="destination11" id="isl_dest">
                 <div class="badge">
                     4.6
                 </div>
@@ -370,7 +370,7 @@
     </div>    
 
     <div class="section_seller">
-        <div class="section_div">
+        <div class="section_div" id="sell">
             <h2 class="section_title">Best Packages</h2>
             <div class="seller_div">
                 <button class="button">Check All</button>
@@ -386,7 +386,7 @@
                         <div class="seller_image_price">
                             <p>10 Days | 9 Nights</p>
                             <h4>$846.77</h4>
-                            <button class="button">Explore</button>
+                            <button class="button1">Explore</button>
                         </div>
                     </div>
                 </div>
@@ -406,7 +406,7 @@
                         <div class="seller_image_price">
                             <p>7 Days | 6 Nights</p>
                             <h4>$799.98</h4>
-                            <button class="button">Explore</button>
+                            <button class="button1">Explore</button>
                         </div>
                     </div>
                 </div>
@@ -426,7 +426,7 @@
                         <div class="seller_image_price">
                             <p>10 Days | 9 Nights</p>
                             <h4>$757.99</h4>
-                            <button class="button">Explore</button>
+                            <button class="button1">Explore</button>
                         </div>
                     </div>
                 </div>
@@ -446,7 +446,7 @@
                         <div class="seller_image_price">
                             <p>14 Days | 13 Nights</p>
                             <h4>$996.47</h4>
-                            <button class="button">Explore</button>
+                            <button class="button1">Explore</button>
                         </div>
                     </div>
                 </div>
@@ -466,7 +466,7 @@
                         <div class="seller_image_price">
                             <p>11 Days | 10 Nights</p>
                             <h4>$1149.98</h4>
-                            <button class="button">Explore</button>
+                            <button class="button1">Explore</button>
                         </div>
                     </div>
                 </div>
@@ -491,7 +491,7 @@
     </div>
 
     <div class="section_reviews" id="reviews">
-        <div class="section_div">
+        <div class="section_div" id="revs">
             <h2 class="section_title">Reviews</h2>
             <div class="seller_div">
                 <button class="button">Check All</button>

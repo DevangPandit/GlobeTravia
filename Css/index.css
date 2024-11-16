@@ -2,6 +2,7 @@
 
 body{
     font-family: Poppins , sans-serif;
+    
 }
 *{
     padding: 0;
@@ -16,7 +17,8 @@ html,body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 720px
+    height: 720px;
+    width:100%;
 }
 .nav_div a{
     padding-left: 10px;
@@ -373,6 +375,23 @@ p i{
     margin-bottom: 0;
 }
 
+.button1{
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    font-weight: 700;
+    background-color: red;
+    color: white;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 2px 5px  rgba(0, 0, 0, 0.3);
+}
+
+.button1:hover{
+    background-color: darkred;
+    transition: scale(1.1);
+}
+
 .seller_image_footer button {
     font-size: 15px;
     background-color: red;
@@ -614,4 +633,335 @@ p i{
     padding-bottom: 30px;
 }
 
+/* Responsive Css code for the header*/
+@media (max-width: 768px) {
 
+   .header_div{
+    width:740px;
+   }
+
+    .nav_logo {
+        flex-direction: row;
+        align-items: flex-start;
+        padding-left: 10px;
+        font-size: large;
+    }
+
+    .nav_div a{
+        margin-top: 15px;
+        font-size: larger;
+    }
+    .nav_div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .nav_ul {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+        padding-left: 200px;
+        margin-right: 0;
+    }
+
+    .nav_ul a {
+        font-size:small;
+    }
+
+    .header {
+        height: auto;
+        width:740px;
+    }
+
+    .header_div {
+        padding: 80px;
+    }
+
+    .header_div h1 {
+        font-size: 2rem;
+        padding: 2rem 0;
+    }
+
+    .header_form {
+        padding: 20px;
+    }
+
+    .header_form form {
+        gap: 1.5rem;
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .info_div input {
+        font-size: small;
+        padding: 8px;
+    }
+
+    .button {
+        width: 100%;
+        height: auto;
+        font-size: medium;
+        padding: 10px;
+        margin-left: 100px;
+    }
+
+/* Responsive Css code for the trending grid*/
+
+    .section_trending {
+        padding-left: 20px;
+        padding-right: 20px;
+        width:740px;
+    }
+
+    .section_div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        gap: 20px;
+
+    }
+
+    .section_div h2 {
+        margin-left: 0;
+        font-size: 28px;
+    }
+
+    .section_div i {
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .trending_grid {
+        display: grid;
+        height: 570px;
+        grid-template-columns: 6fr, 1fr; 
+        gap: 20px;
+        overflow: scroll;
+        width:100%;
+    }
+
+    .trending_card {
+        margin: 0 auto; 
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 300px;
+    }
+
+    .trending_card img {
+        width: 100%; 
+        height: 165px; 
+    }
+
+    .trending_card h1 {
+        font-size: 1.5rem;
+    }
+
+    .trending_card p {
+        font-size: 1rem;
+    }
+
+    .trending_card h3 {
+        font-size: 1.2rem;
+    }
+
+    .trending_details {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .trending_ratings {
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+/* Responsive Css for the destination grid*/
+
+    .section_destination {
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+        width: 720px;
+        height: 1320px;
+    }
+
+    .destination_grid {
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+        grid-auto-rows: max-content;
+        gap: 2px;
+        margin-top: 40px;
+        width: 710px;
+        height: 1300px;
+        padding-right: 20px;
+        overflow: visible;
+    }
+
+    #dest{
+        width:694px;
+    }
+
+    #d7{
+        width: 100%;
+    }
+
+    .destination_card:nth-child(7){
+        grid-area: 2/2/3/4;
+    }
+
+    .destination_card {
+        border-radius: 8px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .destination_card:hover {
+        transform: scale(1.02); /* Slight scaling for better usability */
+        box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .destination_card img {
+        width: 225px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .badge {
+        font-size: 12px;
+        padding: 3px 8px;
+        top: 0px;
+        right: 12px;
+    }
+
+    .destination_details {
+        padding: 10px;
+    }
+
+    .destination_details h4 {
+        font-size: 16px;
+    }
+
+    .destination_details p {
+        font-size: 12px;
+    }
+
+
+/* Responsive Css for the seller grid*/
+
+    .section_seller {
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+        width: 740px;
+        padding-top: 20px;
+    }
+    .seller_grid {
+        display: grid;
+        height: auto;
+        grid-template-columns: 5fr, 1fr; 
+        gap: 20px;
+        overflow: scroll;
+        width:100%;
+    }
+
+    #sell{
+        margin-right: 120px;
+    }
+
+    .seller_image_content {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        transform: 0.3s;
+        border-radius: 10px;
+    }
+
+    .seller_image_footer{
+        width: 400px;
+    }
+    
+    .seller_image_price h4{
+        margin-bottom: 10px;
+    }
+
+    .button1{
+        border-radius: 20px;
+        width: 150px;
+        height: 37px;
+    }
+
+/* Responsive Css for the Video section*/ 
+
+    .section_tour{
+        margin-top: 40px;
+    }
+    
+    .tour{
+        width: 640px;
+    }
+
+/* Responsive Css for the reviews section*/
+
+    .section_reviews {
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+        width: 740px;
+        padding-top: 70px;
+    }
+
+    #reviews{
+        padding-top: 0;
+    }
+
+    #revs{
+        width: 580px;
+    }
+
+    .reviews_grid{
+        display: grid;
+        grid-template-columns: repeat(1,3fr);
+    }
+
+/* Responsive Css for the member section*/  
+
+    .section_member{
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+        width: 740px;
+        padding-top: 70px;
+    }
+
+    .member_div h4{
+        font-size: 24px;
+    }
+
+/* Responsive Css for the footer section*/   
+
+    .section_footer{
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+        width: 740px;
+        padding-top: 70px;
+        gap: 20px;
+    }
+
+    .footer_p{
+        width: 740px;
+    }
+}
+
+@media(max-width: 486px){
+    #isl_dest{
+        height: 300px;
+        width: 225px;
+        padding-bottom:0px;
+    }
+}
