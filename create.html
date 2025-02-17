@@ -16,13 +16,15 @@
                 <div class="header">Globe Travia</div>
             </div>
             <div class="section_sign">
-                <form action="signup">
-                    <input type="email" placeholder="Enter your email address"><br>
-                    <input type="password" placeholder="Enter password"><br>
-                    <input type="password" placeholder="Re-Enter password">
-                </form>
-                <input type="checkbox">Remember me <br>
-                <button><a href="login.html">Create Account</a></button>
+                <form name="myForm" action="signup" onsubmit="return validateAll()">
+                    <input name="femail" type="email" placeholder="Enter your email address"><br>
+                    <div id="error-message" class="error"></div>
+                    <input name="fpass" type="password" placeholder="Enter password"><br>
+                    <input name="frepass" type="password" placeholder="Re-Enter password">
+                    <div id="error-message1" class="error1"></div>
+                    <input type="checkbox">Remember me <br>
+                    <button><a id="anchors" href="login.html">Create Account</a></button>
+                </form>    
                 <hr>
                 <p>Join with us on</p>
                 <div class="section_links">
@@ -37,5 +39,6 @@
     <footer class="section_footer">
         <p>Copyright &copy; 2024 Globe Travia. All rights reserved.</p>
     </footer>
+    <script src="Javascript/script.js"></script>
 </body>
 </html>

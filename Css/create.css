@@ -63,6 +63,16 @@ html,body{
     border-radius: 5px;
 }
 
+#error-message {
+    color: red;
+    font-size: 10px;
+}
+
+#error-message1 {
+    color: red;
+    font-size: 10px;
+}
+
 .section_sign button {
     width: 100%;
     padding: 10px;
