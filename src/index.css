@@ -731,81 +731,153 @@ p i {
     padding-bottom: 30px;
 }
 
-/* Responsive Css code for the header*/
 @media (max-width: 768px) {
-
-    .header_div {
-        width: 740px;
+    .nav_logo {
+        padding: 5px 15px !important;
+        justify-content: space-between;
     }
 
-    .nav_logo {
-        flex-direction: row;
-        align-items: flex-start;
-        padding-left: 10px;
-        font-size: large;
+    .nav_logo img {
+        height: 45px;
+        width: 50px;
     }
 
     .nav_div a {
-        margin-top: 15px;
-        font-size: larger;
+        font-size: 20px !important;
     }
 
-    .nav_div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+    .hamburger {
+        font-size: 28px;
     }
 
-    .nav_ul {
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 1rem;
-        padding-left: 200px;
-        margin-right: 0;
-    }
-
-    .nav_ul a {
-        font-size: small;
-    }
-
-    .header {
+    .hero-header {
         height: auto;
-        width: 740px;
+        min-height: 600px;
+        padding-bottom: 50px;
     }
 
     .header_div {
-        padding: 80px;
+        padding: 100px 20px 40px !important;
+        width: 100% !important;
     }
 
     .header_div h1 {
-        font-size: 2rem;
-        padding: 2rem 0;
+        font-size: 1.8rem !important;
+        padding: 20px 0 !important;
+        line-height: 1.3;
     }
 
     .header_form {
-        padding: 20px;
+        padding: 15px !important;
+        width: 100% !important;
     }
 
     .header_form form {
-        gap: 1.5rem;
-        display: grid;
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: repeat(2, 1fr);
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 15px !important;
+        padding: 20px !important;
+    }
+
+    .info_div {
+        width: 100%;
     }
 
     .info_div input {
-        font-size: small;
-        padding: 8px;
+        border-bottom: 1px solid #eee !important;
+        padding: 8px 0 !important;
     }
 
-    .button {
-        width: 100%;
-        height: auto;
-        font-size: medium;
-        padding: 10px;
-        margin-left: 100px;
+    .button#check {
+        margin-left: 0 !important;
+        width: 100% !important;
+        height: 45px !important;
+    }
+
+    /* Responsive Css code for the trending grid*/
+    .section_trending {
+        padding: 30px 20px !important;
+        width: 100% !important;
+    }
+
+    .section_div {
+        flex-direction: column !important;
+        gap: 10px !important;
+    }
+
+    .section_div h2 {
+        margin-left: 0 !important;
+        font-size: 24px !important;
+    }
+
+    .trending_grid {
+        display: flex !important;
+        overflow-x: auto !important;
+        gap: 20px !important;
+        padding-bottom: 20px !important;
+        scroll-snap-type: x mandatory;
+    }
+
+    .trending_card {
+        flex: 0 0 280px !important;
+        margin: 0 !important;
+        scroll-snap-align: center;
+    }
+
+    .trending_card img {
+        width: 100% !important;
+        height: 200px !important;
+    }
+
+    /* Responsive Css for the destination grid*/
+    .section_destination {
+        padding: 30px 20px !important;
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .destination_grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 15px !important;
+        width: 100% !important;
+        height: auto !important;
+        padding-right: 0 !important;
+    }
+
+    #dest {
+        width: 100% !important;
+    }
+
+    .destination_card {
+        grid-area: auto !important;
+        height: 250px !important;
+    }
+
+    .destination_card img {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    /* Responsive Css for the seller grid*/
+    .section_seller {
+        padding: 30px 20px !important;
+        width: 100% !important;
+    }
+
+    .seller_grid {
+        display: flex !important;
+        overflow-x: auto !important;
+        gap: 20px !important;
+        padding-bottom: 20px !important;
+    }
+
+    .seller_card {
+        flex: 0 0 280px !important;
+    }
+
+    .seller_card img {
+        width: 100% !important;
+        height: 200px !important;
     }
 
     /* Responsive Css code for the trending grid*/
@@ -1065,5 +1137,79 @@ p i {
         height: 300px;
         width: 225px;
         padding-bottom: 0px;
+    }
+
+    /* Responsive Css for the Video section*/
+    .tour {
+        width: 100% !important;
+        margin: 40px 0 !important;
+        border-radius: 0 !important;
+    }
+
+    .section_tour h4 {
+        font-size: 30px !important;
+    }
+
+    .section_video {
+        width: 90% !important;
+        height: 200px !important;
+    }
+
+    /* Responsive Css for the reviews section*/
+    .section_reviews {
+        padding: 40px 20px !important;
+        width: 100% !important;
+    }
+
+    .reviews_grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+
+    /* Responsive Css for the member section*/
+    .section_member {
+        padding: 40px 20px !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: 400px;
+    }
+
+    .member_div h4 {
+        font-size: 22px !important;
+        padding-top: 50px !important;
+    }
+
+    .member_div form {
+        flex-direction: column !important;
+        gap: 15px !important;
+        padding: 20px !important;
+    }
+
+    .member_div input {
+        width: 100% !important;
+        padding: 12px !important;
+    }
+
+    /* Responsive Css for the footer section*/
+    .section_footer {
+        padding: 40px 20px !important;
+        width: 100% !important;
+        flex-direction: column !important;
+        gap: 30px !important;
+        text-align: center;
+    }
+
+    .footer_div {
+        align-items: center;
+    }
+
+    .footer_a {
+        justify-content: center !important;
+        gap: 20px;
+    }
+
+    .footer_p {
+        width: 100% !important;
+        padding: 20px !important;
     }
 }
