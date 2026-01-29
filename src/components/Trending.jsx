@@ -67,7 +67,7 @@ const Trending = () => {
     return (
         <div className="section_trending" id="trending">
             <div className="section_div">
-                <h2 className="section_title">Trending 2024</h2>
+                <h2 className="section_title">Trending 2025</h2>
                 <div className="trending_div">
                     <span><i className="ri-arrow-left-s-line"></i></span>
                     <span><i className="ri-arrow-right-s-line"></i></span>

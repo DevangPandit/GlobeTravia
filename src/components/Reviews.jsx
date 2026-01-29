@@ -5,7 +5,7 @@ const Reviews = () => {
         {
             img: '/images/client1.avif',
             name: 'Devang Pandit',
-            role: 'Buisnessman',
+            role: 'Businessman',
             text: '"Exceptional service! The travel company handled every detail seamlessly, from booking flights to organizing excursions. Our itinerary was well-planned, and the guides were knowledgeable and friendly. Communication was clear and prompt throughout. Thanks to their expertise, we enjoyed a stress-free and memorable trip. Highly recommend their services!"'
         },
         {
