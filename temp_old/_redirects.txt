@@ -1,2 +1,0 @@
-/    /Html/index.html   200
-/querystrings /?query=string  30
