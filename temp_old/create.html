@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/GlobeTravia.png" sizes="32x32" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/Css/create.css">
+    <title>Globe Travia - Create Account</title>
+</head>
+<body>
+    <div class="section_main">
+        <div class="section_contact">
+            <div class="section_logo">
+                <img src="/images/GlobeTravia.png" alt="logo">
+                <div class="header">Globe Travia</div>
+            </div>
+            <div class="section_sign">
+                <form name="myForm" action="signup" onsubmit="return validateAll()">
+                    <input name="femail" type="email" placeholder="Enter your email address"><br>
+                    <div id="error-message" class="error"></div>
+                    <input name="fpass" type="password" placeholder="Enter password"><br>
+                    <input name="frepass" type="password" placeholder="Re-Enter password">
+                    <div id="error-message1" class="error1"></div>
+                    <input type="checkbox">Remember me <br>
+                    <button><a id="anchors" href="login.html">Create Account</a></button>
+                </form>    
+                <hr>
+                <p>Join with us on</p>
+                <div class="section_links">
+                    <a href=""><span><i class="ri-twitter-fill"></i></span></a>
+                    <a href=""><span><i class="ri-facebook-fill"></i></span></a>
+                    <a href=""><span><i class="ri-instagram-fill"></i></span></a>
+                    <a href=""><span><i class="ri-linkedin-fill"></i></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="section_footer">
+        <p>Copyright &copy; 2024 Globe Travia. All rights reserved.</p>
+    </footer>
+    <script src="Javascript/script.js"></script>
+</body>
+</html>
